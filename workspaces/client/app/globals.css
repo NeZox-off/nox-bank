@@ -66,9 +66,9 @@
 
 @layer base {
   * {
-    @apply border-border box-border m-0 p-0;
+    @apply box-border m-0 p-0;
   }
   body {
-    @apply bg-background text-secondary text-base font-medium;
+    @apply bg-background text-secondary text-base font-medium leading-normal;
   }
 }
