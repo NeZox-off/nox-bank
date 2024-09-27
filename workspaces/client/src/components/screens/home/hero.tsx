@@ -12,7 +12,7 @@ const Hero: FC<HeroProps> = ({}) => {
       <Container>
         <div className="flex justify-between items-center">
           <div className="max-w-2xl">
-            <h1 className="text-5xl leading-tight mb-16 text-balance">
+            <h1 className="text-5xl text-black leading-tight mb-16 text-balance">
               Банк будущего для тех, кто ценит{" "}
               <span className="underline">уверенность</span> и{" "}
               <span className="underline">инновации</span>!

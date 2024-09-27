@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary:
-          "bg-primary text-secondary-foreground hover:bg-primary/90",
+          "bg-primary text-secondary-foreground hover:bg-primary-foreground/80",
         secondary:
           "bg-secondary text-primary-foreground hover:bg-secondary/80",
       },
