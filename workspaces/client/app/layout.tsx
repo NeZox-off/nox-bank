@@ -1,11 +1,33 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import localFont from 'next/font/local'
 import "./globals.css";
 
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   weight: ['400', '500', '600', '700']
+})
+
+const interExtraBold = localFont({
+  src: "../public/fonts/Inter_18pt-ExtraBold.ttf",
+  weight: "800",
+  display: 'swap',
+})
+const interBold = localFont({
+  src: "../public/fonts/Inter_18pt-Bold.ttf",
+  weight: "700",
+  display: 'swap',
+})
+const interMedium = localFont({
+  src: "../public/fonts/Inter_18pt-Medium.ttf",
+  weight: "500",
+  display: 'swap',
+})
+const interRegular = localFont({
+  src: "../public/fonts/Inter_18pt-Regular.ttf",
+  weight: "400",
+  display: 'swap',
 })
 
 export const metadata: Metadata = {
@@ -21,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="ua">
       <body
-        className={`${inter.className} antialiased`}
+        className={`${interExtraBold.className} ${interBold.className} ${interMedium.className} ${interRegular.className} antialiased`}
       >
         {children}
       </body>
