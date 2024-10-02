@@ -3,57 +3,13 @@ import { Container } from "../../shared/container";
 import { Button } from "../../ui/button";
 import { Icon } from "../../ui/icon";
 import Image from "next/image";
-import { CurrencyEnum, TransferTypeEnum } from "@/src/types/type";
+import { CurrencyEnum } from "@/src/types/type";
 import { cn } from "@/src/lib/utils";
 import { formatCurrency } from "@/src/lib/formatCurrecy";
 import { Separator } from "../../ui/separator";
+import { showCurrency, transfers } from "@/src/lib/static-data";
 
 interface HeroProps {}
-
-const transfers = [
-  {
-    id: 1,
-    icon: "/images/svg/transfer.svg",
-    user: {
-      name: "Maxim Kenley",
-      hidden: false,
-      transfer: {
-        type: TransferTypeEnum.DEFAULT,
-        currency: CurrencyEnum.USD,
-        amount: -5.1,
-      },
-    },
-    style: "z-[3]",
-  },
-  {
-    id: 2,
-    icon: "/images/svg/transfer.svg",
-    user: {
-      name: "John Kenley",
-      hidden: true,
-      transfer: {
-        type: TransferTypeEnum.EXCHANGE,
-        currency: CurrencyEnum.USD,
-        amount: 1009,
-      },
-    },
-    style: "z-[2] opacity-60 -mt-6",
-  },
-  {
-    id: 3,
-    icon: "/images/svg/transfer.svg",
-    user: {
-      name: "Maxim Kenley",
-      hidden: false,
-      transfer: {
-        type: TransferTypeEnum.DEFAULT,
-        currency: CurrencyEnum.USD,
-        amount: -3.99,
-      },
-    },
-    style: "z-[1] opacity-20 -mt-8",
-  },
-];
 
 const Hero: FC<HeroProps> = ({}) => {
   return (
@@ -61,13 +17,13 @@ const Hero: FC<HeroProps> = ({}) => {
       <Container>
         <div className="flex justify-between items-center">
           <div className="max-w-2xl">
-            <h1 className="text-5xl text-white leading-tight mb-16 text-balance">
-              Банк будущего для тех, кто ценит{" "}
-              <span className="underline">уверенность</span> и{" "}
-              <span className="underline">инновации</span>!
+            <h1 className="text-5xl font-bold text-white leading-tight mb-16">
+              Банк майбутнього для тих, хто цінує{" "}
+              <span className="underline">впевненість</span> та{" "}
+              <span className="underline">інновації</span>!
             </h1>
             <Button className="gap-2 border-2 border-border/10">
-              Оформить карту <Icon name="ChevronRight" />{" "}
+              Оформити картку <Icon name="ChevronRight" />{" "}
             </Button>
           </div>
           <div className="max-w-sm w-full">
@@ -160,8 +116,24 @@ const Hero: FC<HeroProps> = ({}) => {
                 </div>
               </div>
               <Button className="border-2 border-border/10 w-full gap-2 py-3">
-                Перевести <Image src={'/images/svg/cash-transfer.svg'} width={24} height={24} alt="Cash transfer icon" />
+                Перевести{" "}
+                <Image
+                  src={"/images/svg/cash-transfer.svg"}
+                  width={24}
+                  height={24}
+                  alt="Cash transfer icon"
+                />
               </Button>
+              <div className="flex justify-between items-center px-4 py-1 bg-primary rounded-2xl border-2 border-border/10 mt-3">
+                <p>Підтримувані валюти</p>
+                <ul className="flex items-center gap-1 p-2 rounded-full bg-primary border border-border/10">
+                  {showCurrency.map(item => (
+                    <li key={item.id} className="bg-[#262626] rounded-full">
+                      <Image src={item.icon} width={32} height={32} alt={item.title} />
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>

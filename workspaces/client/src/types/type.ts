@@ -1,6 +1,6 @@
 export enum TransferTypeEnum {
-  "DEFAULT" = "Перевод",
-  "EXCHANGE" = "Обмен",
+  "DEFAULT" = "Переказ",
+  "EXCHANGE" = "Обмін",
 }
 
 export enum CurrencyEnum {
