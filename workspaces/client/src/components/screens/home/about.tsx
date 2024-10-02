@@ -21,22 +21,28 @@ const About: FC<AboutProps> = ({}) => {
                 інновації та індивідуальний підхід, доступні кожному.
               </p>
             </div>
-            <TabsList className="bg-primary rounded-2xl gap-2 px-3 py-2">
-              <TabsTrigger
-                className="rounded-xl border-2 border-border/10"
-                value="client"
-              >
-                Клієнта
-              </TabsTrigger>
-              <TabsTrigger
-                className="rounded-xl border-2 border-border/10"
-                value="business"
-              >
-                Бізнесу
-              </TabsTrigger>
-            </TabsList>
+            <div className="flex flex-col items-end gap-1">
+              <span className="text-sm text-white/40">Послуги для:</span>
+              <TabsList className="bg-primary rounded-2xl gap-2 px-3 py-2">
+                <TabsTrigger
+                  className="rounded-xl border-2 border-border/10"
+                  value="client"
+                >
+                  Клієнта
+                </TabsTrigger>
+                <TabsTrigger
+                  className="rounded-xl border-2 border-border/10"
+                  value="business"
+                >
+                  Бізнесу
+                </TabsTrigger>
+              </TabsList>
+            </div>
           </div>
-          <TabsContent value="client" className="flex items-start">
+          <TabsContent
+            value="client"
+            className="flex items-start justify-center data-[state=active]:h-72"
+          >
             {servicesClient.map((item) => (
               <div
                 key={item.id}
@@ -57,7 +63,10 @@ const About: FC<AboutProps> = ({}) => {
               </div>
             ))}
           </TabsContent>
-          <TabsContent value="business" className="flex items-start">
+          <TabsContent
+            value="business"
+            className="flex items-start justify-center data-[state=active]:h-72"
+          >
             {businessClient.map((item) => (
               <div
                 key={item.id}
