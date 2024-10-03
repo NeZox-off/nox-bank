@@ -132,3 +132,49 @@ export const faq = [
     desc: 'Так, усі транзакції та особисті дані захищені за допомогою багаторівневої системи безпеки. Ми використовуємо шифрування даних, моніторинг підозрілих операцій та двофакторну автентифікацію, щоб гарантувати безпеку ваших засобів та інформації.'
   },
 ]
+
+export const reviews = [
+  {
+    id: 1,
+    author: 'Sata T',
+    desc: 'Lorem ipsum odor amet, consectetuer adipiscing elit. Sit morbi congue dignissim; nullam aliquet arcu interdum mauris. Natoque consectetur augue bibendum; donec nunc arcu nam hendrerit potenti. ',
+  },
+  {
+    id: 2,
+    author: 'John D',
+    desc: 'Lorem ipsum odor amet, consectetuer adipiscing elit. Sit morbi congue dignissim; nullam aliquet arcu interdum mauris. Natoque consectetur augue bibendum; donec nunc arcu nam hendrerit potenti. ',
+  },
+  {
+    id: 3,
+    author: 'Emily G',
+    desc: 'Lorem ipsum odor amet, consectetuer adipiscing elit. Sit morbi congue dignissim; nullam aliquet arcu interdum mauris. Natoque consectetur augue bibendum; donec nunc arcu nam hendrerit potenti. ',
+  },
+  {
+    id: 4,
+    author: 'Maskim K',
+    desc: 'Lorem ipsum odor amet, consectetuer adipiscing elit. Sit morbi congue dignissim; nullam aliquet arcu interdum mauris. Natoque consectetur augue bibendum; donec nunc arcu nam hendrerit potenti. ',
+  },
+]
+
+export const navigation = [
+  {
+    id: 1,
+    title: "Главная",
+    link: "/",
+  },
+  {
+    id: 2,
+    title: "О нас",
+    link: "/about",
+  },
+  {
+    id: 3,
+    title: "Услуги",
+    link: "/offers",
+  },
+  {
+    id: 4,
+    title: "Бизнесс",
+    link: "/business",
+  },
+];

@@ -1,11 +1,1 @@
-<svg width="51" height="30" viewBox="0 0 51 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_18_1637)">
-<path d="M19.4136 0H10.551L42.2951 29.9769H51.1836L35.3095 14.9987L51.1582 0.0226795L42.2951 0.0332632L30.8723 10.8121L19.4136 0ZM28.5081 21.4128L24.0698 17.2201L10.5256 30H19.4136L28.5081 21.4128Z" fill="black"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M39.0962 30L8.72429 0H0.635986V29.9875H7.10663V6.40996L30.9675 30H39.0962Z" fill="black"/>
-</g>
-<defs>
-<clipPath id="clip0_18_1637">
-<rect width="49.7922" height="30" fill="white" transform="translate(0.635986)"/>
-</clipPath>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="51" height="30" fill="none"><g fill="#000" clip-path="url(#a)"><path d="M19.414 0H10.55l31.744 29.977h8.889L35.31 14.999 51.158.023l-8.863.01-11.423 10.78zm9.094 21.413L24.07 17.22 10.526 30h8.888z"/><path fill-rule="evenodd" d="M39.096 30 8.724 0H.636v29.988h6.47V6.41L30.969 30z" clip-rule="evenodd"/></g><defs><clipPath id="a"><path fill="#fff" d="M.636 0h49.792v30H.636z"/></clipPath></defs></svg>

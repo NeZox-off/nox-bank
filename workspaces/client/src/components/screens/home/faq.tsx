@@ -6,7 +6,7 @@ import { Icon } from "../../ui/icon";
 
 interface FaqProps {}
 
-const Faq: FC<FaqProps> = ({}) => {
+export const Faq: FC<FaqProps> = ({}) => {
   return (
     <section className="py-20">
       <Container>
@@ -37,5 +37,3 @@ const Faq: FC<FaqProps> = ({}) => {
     </section>
   );
 };
-
-export default Faq;

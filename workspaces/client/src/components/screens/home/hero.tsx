@@ -56,7 +56,7 @@ export const transfers = [
   },
 ];
 
-const Hero: FC<HeroProps> = ({}) => {
+export const Hero: FC<HeroProps> = ({}) => {
   return (
     <section className="py-60 relative h-screen overflow-hidden">
       <Container>
@@ -219,5 +219,3 @@ const Hero: FC<HeroProps> = ({}) => {
     </section>
   );
 };
-
-export default Hero;

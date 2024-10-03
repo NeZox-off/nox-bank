@@ -22,7 +22,8 @@ const buttonVariants = cva(
       rounded: {
         default: "rounded-2xl",
         sm: "rounded-md",
-        xl: "rounded-3xl"
+        xl: "rounded-3xl",
+        full: "rounded-full"
       }
     },
     defaultVariants: {

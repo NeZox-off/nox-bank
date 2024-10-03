@@ -6,7 +6,7 @@ import Image from "next/image";
 
 interface AboutProps {}
 
-const About: FC<AboutProps> = ({}) => {
+export const About: FC<AboutProps> = ({}) => {
   return (
     <section className="py-32 bg-[url('/images/svg/about-grid-patterns.svg')] bg-no-repeat bg-center">
       <Container>
@@ -92,5 +92,3 @@ const About: FC<AboutProps> = ({}) => {
     </section>
   );
 };
-
-export default About;

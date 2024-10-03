@@ -6,29 +6,8 @@ import Link from "next/link";
 import { cn } from "@/src/lib/utils";
 import { usePathname } from "next/navigation";
 import { Button } from "../ui/button";
+import { navigation } from "@/src/lib/static-data";
 
-const navigation = [
-  {
-    id: 1,
-    title: "Главная",
-    link: "/",
-  },
-  {
-    id: 2,
-    title: "О нас",
-    link: "/about",
-  },
-  {
-    id: 3,
-    title: "Услуги",
-    link: "/offers",
-  },
-  {
-    id: 4,
-    title: "Бизнесс",
-    link: "/business",
-  },
-];
 
 export const Header: FC = ({}) => {
   const pathname = usePathname();
