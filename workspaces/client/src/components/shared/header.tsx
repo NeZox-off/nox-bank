@@ -8,12 +8,17 @@ import { usePathname } from "next/navigation";
 import { Button } from "../ui/button";
 import { navigation } from "@/src/lib/static-data";
 
-
 export const Header: FC = ({}) => {
   const pathname = usePathname();
   return (
-    <header className="fixed z-10 w-full top-8 flex justify-center">
-      <div className="flex justify-center w-full max-w-5xl items-center shadow-xl rounded-3xl p-3 backdrop-blur-md border border-border/10">
+    <header className="fixed z-10 w-full top-8 flex justify-center px-5 lg:px-0">
+      <div
+        className={cn(
+          "flex justify-center w-full items-center shadow-xl rounded-3xl px-10 py-3 backdrop-blur-md border border-border/10 max-w-full",
+          "lg:max-w-5xl",
+          "md:max-w-4xl",
+        )}
+      >
         <div className="flex-1 justify-start flex">
           <Link href={"/"}>
             <Image
@@ -24,7 +29,7 @@ export const Header: FC = ({}) => {
             />
           </Link>
         </div>
-        <nav className="flex-none">
+        <nav className="flex-none hidden lg:flex">
           <ul className="flex items-center gap-4">
             {navigation.map((item) => (
               <li

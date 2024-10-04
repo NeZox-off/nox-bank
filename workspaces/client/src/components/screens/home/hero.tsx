@@ -60,7 +60,7 @@ export const Hero: FC<HeroProps> = ({}) => {
   return (
     <section className="py-60 relative h-screen overflow-hidden">
       <Container>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center flex-col lg:flex-row">
           <div className="max-w-2xl">
             <h1 className="text-5xl font-bold text-white leading-tight mb-16">
               Банк майбутнього для тих, хто цінує{" "}
@@ -71,7 +71,7 @@ export const Hero: FC<HeroProps> = ({}) => {
               Оформити картку <Icon name="ChevronRight" />{" "}
             </Button>
           </div>
-          <div className="max-w-sm w-full">
+          <div className="max-w-sm w-full hidden lg:block">
             <ul className="mb-5">
               {transfers.map((item) => (
                 <li
