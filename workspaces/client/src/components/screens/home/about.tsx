@@ -14,7 +14,7 @@ export const About: FC<AboutProps> = ({}) => {
           <div className="flex items-start justify-between mb-5 flex-col lg:items-end lg:mb-10 lg:flex-row">
             <div className="mb-5 lg:mb-0">
               <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4">Про нас</h2>
-              <p className="max-w-full md:max-w-xl xl:max-w-4xl text-white/60 text-lg">
+              <p className="max-w-full md:max-w-xl xl:max-w-4xl text-white/60 text-base md:text-lg">
                 Банк NOX – ваш надійний партнер у світі фінансів. Ми пропонуємо
                 зручні та безпечні рішення для управління вашими засобами,
                 поєднуючи передові технології з простотою використання. NOX – це

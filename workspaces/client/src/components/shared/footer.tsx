@@ -47,8 +47,8 @@ export const Footer: FC<footerProps> = ({}) => {
   return (
     <footer className="bg-black py-16">
       <Container>
-        <div className="flex items-start justify-between mb-24">
-          <div>
+        <div className="flex items-start justify-between mb-12 lg:mb-24 flex-col lg:flex-row">
+          <div className="w-full flex justify-center items-center flex-col mb-5 lg:block lg:justify-start lg:items-start lg:mb-0">
             <Link href={"/"}>
               <Image
                 src={"/images/svg/logo-white.svg"}
@@ -63,8 +63,8 @@ export const Footer: FC<footerProps> = ({}) => {
               </BreadcrumbList>
             </Breadcrumb>
           </div>
-          <div className="flex gap-5 flex-col w-1/3">
-            <div className="max-w-56">
+          <div className="flex gap-5 flex-col justify-center items-center lg:justify-start lg:items-start w-full lg:w-1/3">
+            <div className="max-w-56 w-full flex items-center justify-center flex-col lg:block">
               <span className="text-white/40 text-sm">Зв'язатися з нами</span>
               <Link className="flex gap-2 text-xl" href={"tel:+1234567890"}>
                 <span className="text-white/40">(</span>
@@ -72,7 +72,7 @@ export const Footer: FC<footerProps> = ({}) => {
                 <span className="text-white/40">)</span>
               </Link>
             </div>
-            <div className="flex items-start justify-between">
+            <div className="flex items-center justify-center gap-5 lg:gap-0 lg:items-start lg:justify-between flex-col lg:flex-row">
               <div className="max-w-56">
                 <span className="text-white/40 text-sm">Місцезнаходження</span>
                 <p className="text-white/70">
@@ -92,16 +92,16 @@ export const Footer: FC<footerProps> = ({}) => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between items-center">
+        <div className="flex w-full justify-between items-center flex-col gap-5 lg:flex-row lg:gap-0">
           <Button
             size={"icon"}
             variant={"none"}
-            className="border border-border rounded-full"
+            className="lg:order-0 border border-border rounded-full"
             rounded={null}
           >
             <Icon name="ChevronUp" />
           </Button>
-          <div className="w-1/3">
+          <div className="w-auto order-0 lg:w-1/3">
             <Link href={"/"}>© {new Date().getFullYear()} — Copyright</Link>
           </div>
         </div>

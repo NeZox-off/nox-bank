@@ -1,13 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import localFont from 'next/font/local'
 import "./globals.css";
-
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: ['400', '500', '600', '700']
-})
 
 const interExtraBold = localFont({
   src: "../public/fonts/Inter_18pt-ExtraBold.ttf",
